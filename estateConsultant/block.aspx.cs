@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace estateConsultant
 {
-    public partial class Index : System.Web.UI.MasterPage
+    public partial class block : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

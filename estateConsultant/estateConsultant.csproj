@@ -67,21 +67,75 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="block.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="newlisting.aspx" />
+    <Content Include="newsite.aspx" />
+    <Content Include="support\CSS\bootstrap.css" />
+    <Content Include="support\CSS\dataTables.css" />
+    <Content Include="support\CSS\font-awesome.css" />
+    <Content Include="support\CSS\Style.css" />
+    <Content Include="support\CSS\sweetalert.min.css" />
+    <Content Include="support\fonts\fontawesome-webfont.svg" />
+    <Content Include="support\JS\bootstrap.bundle.min.js" />
+    <Content Include="support\JS\dataTables.min.js" />
+    <Content Include="support\JS\jquery-3.3.1.min.js" />
+    <Content Include="support\JS\sweetalert.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="block.aspx.cs">
+      <DependentUpon>block.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="block.aspx.designer.cs">
+      <DependentUpon>block.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.Master.cs">
       <DependentUpon>index.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.Master.designer.cs">
       <DependentUpon>index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="newlisting.aspx.cs">
+      <DependentUpon>newlisting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newlisting.aspx.designer.cs">
+      <DependentUpon>newlisting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="newsite.aspx.cs">
+      <DependentUpon>newsite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newsite.aspx.designer.cs">
+      <DependentUpon>newsite.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.Master" />
     <None Include="packages.config" />
+    <Content Include="support\fonts\fontawesome-webfont.eot" />
+    <Content Include="support\fonts\fontawesome-webfont.ttf" />
+    <Content Include="support\fonts\fontawesome-webfont.woff" />
+    <Content Include="support\fonts\fontawesome-webfont.woff2" />
+    <Content Include="support\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
