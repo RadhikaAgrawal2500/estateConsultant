@@ -101,6 +101,7 @@
     </Compile>
     <Compile Include="index.Master.cs">
       <DependentUpon>index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.Master.designer.cs">
       <DependentUpon>index.Master</DependentUpon>
