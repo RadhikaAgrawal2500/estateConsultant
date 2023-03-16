@@ -24,9 +24,21 @@ namespace estateConsultant.API
     {
         TextInfo pcase = new CultureInfo("en-US", false).TextInfo;
         [WebMethod]
+        public DataTable newsitesearch(string sn, string sitename)
+        {
+            {
+                return SqlHelper.ExecuteTextDataTable(CommandType.Text, "select * from newsite where sn like'" + sn + "' and sitename like'" + sitename + "'");
+            }
+        }
+        [WebMethod]
         public void newsitesubmit(string sitename)
         {
             SqlHelper.ExecuteNonQuery(CommandType.Text, "insert into newsite(sitename) values('" + sitename + "')");
+        }
+        [WebMethod]
+        public void newsitedelete(string sn)
+        {
+            SqlHelper.ExecuteNonQuery(CommandType.Text, "delete from newsite where sn='" + sn + "'");
         }
     }
 }
