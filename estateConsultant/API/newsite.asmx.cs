@@ -24,9 +24,9 @@ namespace estateConsultant.API
     {
         TextInfo pcase = new CultureInfo("en-US", false).TextInfo;
         [WebMethod]
-        public DataTable newsitesubmit(string sitename)
+        public void newsitesubmit(string sitename)
         {
-            SqlHelper.ExecuteNonQuery(CommandType.Text, "insert into estate(sitename) values('" + sitename + "')");
+            SqlHelper.ExecuteNonQuery(CommandType.Text, "insert into newsite(sitename) values('" + sitename + "')");
         }
     }
 }
