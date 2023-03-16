@@ -57,16 +57,43 @@
                         Status<asp:DropDownList ID="status" runat="server" CssClass="form-control"></asp:DropDownList>
                     </div>
            <div class="col-md-3"></div>
-                   
-                    
-                    
-
-                    <div class="col-md-2 mt-1">
+                <div class="col-md-2 mt-1">
                         <br />
                         <asp:Button ID="save" runat="server" Text="Save" OnClick="save_Click" CssClass="btn w-100 p-1 rounded-2 bg-warning fa-bold" />
                     </div>
       </div>
+    <br /><hr /><br />
 
+          <div class="row m-0 p-0 border-0  table-responsive card-body">
+       
+<asp:GridView ID="grddata" GridLines="None" AutoGenerateColumns="false" ClientIDMode="Static" OnPreRender="grddata_PreRender" OnRowCommand="grddata_RowCommand" HeaderStyle-BackColor="Teal" HeaderStyle-ForeColor="white" runat="server" CssClass="table table-hover table-bordered">
+<Columns>
+
+<asp:BoundField HeaderText="Site Name" DataField="sitename" />
+<asp:BoundField HeaderText="Plot No." DataField="plotno" />
+<asp:BoundField HeaderText="Plot Facing" DataField="plotfacing" />
+<asp:BoundField HeaderText="Length" DataField="length" />
+<asp:BoundField HeaderText="Width" DataField="width" />
+<asp:BoundField HeaderText="Sq Ft" DataField="sqft" />
+<asp:BoundField HeaderText="Unit" DataField="unit" />
+<asp:BoundField HeaderText="Facing  Side Road" DataField="facingsideroad" />
+<asp:BoundField HeaderText="Other Side Road" DataField="othersideroad" />
+<asp:BoundField HeaderText="Park" DataField="park" />
+<asp:BoundField HeaderText="Connectivity" DataField="connectivity" />
+<asp:BoundField HeaderText="Rate/sqft" DataField="ratepersqft" />
+<asp:BoundField HeaderText="Total" DataField="total" />
+<asp:BoundField HeaderText="Remark" DataField="remark" />
+<asp:BoundField HeaderText="Status" DataField="status" />
+
+                    <asp:TemplateField>
+                        <ItemTemplate>
+                            <asp:LinkButton ID="btnedt" runat="server" CommandName="btnedt" Text="<i class='fa fa-pencil text-sucess'></i>" CommandArgument='<%# Eval("sn") %>'></asp:LinkButton>
+                               <asp:LinkButton ID="btndlt" runat="server" OnClientClick="return confirm('Are you sure you want to delete this record?');"  CommandName="btndlt" Text="<i class='fa fa-close text-danger'></i>" CommandArgument='<%# Eval("sn") %>'></asp:LinkButton>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
+        </div>
 
 
 
