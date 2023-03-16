@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="API\newlisting.asmx" />
     <Content Include="API\newsite.asmx" />
     <Content Include="block.aspx" />
     <Content Include="default.aspx" />
@@ -87,6 +88,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\newlisting.asmx.cs">
+      <DependentUpon>newlisting.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="API\newsite.asmx.cs">
       <DependentUpon>newsite.asmx</DependentUpon>
       <SubType>Component</SubType>
