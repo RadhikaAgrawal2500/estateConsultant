@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12 text-center pt-2 mt-1 text-black ">
               <br />
-                <h1>Block/Area</h1>
+                <h1>Block or Area</h1>
 </div></div>
         <hr><br />
         <div class="row m-1 p-3 ">
