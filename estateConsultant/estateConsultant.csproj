@@ -70,6 +70,7 @@
     <Content Include="API\block.asmx" />
     <Content Include="API\newlisting.asmx" />
     <Content Include="API\newsite.asmx" />
+    <Content Include="API\usersignup.asmx" />
     <Content Include="block.aspx" />
     <Content Include="default.aspx" />
     <Content Include="login.aspx" />
@@ -102,6 +103,10 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="API\SqlHelper.cs" />
+    <Compile Include="API\usersignup.asmx.cs">
+      <DependentUpon>usersignup.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="block.aspx.cs">
       <DependentUpon>block.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
