@@ -24,15 +24,6 @@ namespace estateConsultant
         protected global::System.Web.UI.WebControls.TextBox firstname;
 
         /// <summary>
-        /// lastname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lastname;
-
-        /// <summary>
         /// gender control.
         /// </summary>
         /// <remarks>
@@ -58,6 +49,15 @@ namespace estateConsultant
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox emailid;
+
+        /// <summary>
+        /// designation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList designation;
 
         /// <summary>
         /// username control.

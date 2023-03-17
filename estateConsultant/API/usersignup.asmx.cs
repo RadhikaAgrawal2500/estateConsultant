@@ -29,9 +29,9 @@ namespace estateConsultant.API
             SqlHelper.ExecuteTextDataTable(CommandType.Text, "select * from usersignup where sn like'" + sn + "' and firstname like'" + firstname + "'");
         }
         [WebMethod]
-        public void usersignupsubmit(string firstname,string lastname,string gender, string phonenum, string emailid, string username, string password)
+        public void usersignupsubmit(string firstname,string gender, string phonenum, string emailid,string designation, string username, string password)
         {
-            SqlHelper.ExecuteNonQuery(CommandType.Text, "insert into usersignup(firstname,lastname,gender,phonenum,emailid,username,password) values('" + firstname + "','" + lastname + "','" + gender + "','" + phonenum + "','" + emailid + "','" + username + "','" + password +  "')");
+            SqlHelper.ExecuteNonQuery(CommandType.Text, "insert into usersignup(firstname,gender,phonenum,emailid,designation,username,password) values('" + firstname + "','" + gender + "','" + phonenum + "','" + emailid + "','" + designation +"','" + username + "','" + password +  "')");
         }
 
      

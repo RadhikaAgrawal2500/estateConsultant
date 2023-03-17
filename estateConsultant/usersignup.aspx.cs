@@ -28,7 +28,7 @@ namespace estateConsultant
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            usersignupdata.usersignupsubmit(firstname.Text, lastname.Text, gender.SelectedValue, phonenum.Text, emailid.Text, username.Text, password.Text);
+            usersignupdata.usersignupsubmit(firstname.Text, gender.SelectedValue, phonenum.Text, emailid.Text,designation.SelectedValue, username.Text, password.Text);
             Response.Write("<script>alert('Data save Successfully!!!');</script>");
             ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "swal('','Data Save Sucessfully!!!','success').then((value)=>{window.location='usersignup.aspx'})", true);
         }
