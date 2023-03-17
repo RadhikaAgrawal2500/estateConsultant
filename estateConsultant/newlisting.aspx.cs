@@ -64,5 +64,17 @@ namespace estateConsultant
             }
 
         }
+
+        protected void length_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                sqft.Text = (Convert.ToDecimal(length.Text) * Convert.ToDecimal(width.Text)).ToString();
+                unit.Text = Convert.ToString(Convert.ToDecimal(sqft.Text) / 9);
+                total.Text = Convert.ToString(Convert.ToDecimal(unit.Text) * Convert.ToDecimal(ratepersqft.Text));
+            }
+            catch (Exception ex)
+            { }
+        }
     }
 }

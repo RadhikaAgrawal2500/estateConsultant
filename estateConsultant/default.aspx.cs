@@ -13,15 +13,5 @@ namespace estateConsultant
         {
 
         }
-
-        protected void login_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("login.aspx");
-        }
-
-        protected void registration_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("newlisting.aspx");
-        }
     }
 }

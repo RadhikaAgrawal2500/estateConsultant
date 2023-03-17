@@ -21,10 +21,10 @@
                         Plot Facing<asp:TextBox ID="plotfacing" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-3">
-                       Length<asp:TextBox ID="length" runat="server" CssClass="form-control"></asp:TextBox>
+                       Length<asp:TextBox ID="length" runat="server" AutoPostBack="true" OnTextChanged="length_TextChanged" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-3">
-                        Width<asp:TextBox ID="width" runat="server" CssClass="form-control"></asp:TextBox>
+                        Width<asp:TextBox ID="width" runat="server" AutoPostBack="true" OnTextChanged="length_TextChanged" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-3">
                       Sq Ft<asp:TextBox ID="sqft" runat="server" CssClass="form-control"></asp:TextBox>
@@ -45,7 +45,7 @@
                        Connectivity<asp:TextBox ID="connectivity" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-3">
-                      Rate Per Sq Ft<asp:TextBox ID="ratepersqft" runat="server" CssClass="form-control"></asp:TextBox>
+                      Rate Per Sq Ft<asp:TextBox ID="ratepersqft" AutoPostBack="true" OnTextChanged="length_TextChanged" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-3">
                       Total<asp:TextBox ID="total" runat="server" CssClass="form-control"></asp:TextBox>
