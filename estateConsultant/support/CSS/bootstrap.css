@@ -8571,7 +8571,7 @@ textarea.form-control-lg {
 
 .bg-info {
     --bs-bg-opacity: 1;
-    background-color: #cc3300 !important;
+    background-color: teal !important;
 }
 
 .bg-warning {
