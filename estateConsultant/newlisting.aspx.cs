@@ -55,8 +55,8 @@ namespace estateConsultant
                 if (e.CommandName == "btnedt")
                 {
                     dt = newlistingdata.newlistingsearch(e.CommandArgument.ToString(), "%");
-                    sitename.Text = dt.Rows[0]["sitename"].ToString();
-                    blockno.Text = dt.Rows[0]["blockno"].ToString();
+                    sitename.SelectedValue = dt.Rows[0]["sitename"].ToString();
+                    blockno.SelectedValue = dt.Rows[0]["blockno"].ToString();
                     plotno.Text = dt.Rows[0]["plotno"].ToString();
                     plotfacing.Text = dt.Rows[0]["plotfacing"].ToString();
                     length.Text = dt.Rows[0]["length"].ToString();
@@ -70,7 +70,7 @@ namespace estateConsultant
                     ratepersqft.Text = dt.Rows[0]["ratepersqft"].ToString();
                     total.Text = dt.Rows[0]["total"].ToString();
                     remark.Text = dt.Rows[0]["remark"].ToString();
-                    status.Text = dt.Rows[0]["status"].ToString();
+                    status.SelectedValue = dt.Rows[0]["status"].ToString();
 
                 }
                 else

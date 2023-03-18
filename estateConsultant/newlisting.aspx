@@ -60,7 +60,12 @@
                         Remark<asp:TextBox ID="remark" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-3">
-                        Status<asp:DropDownList ID="status" runat="server" CssClass="form-control"></asp:DropDownList>
+                        Status<asp:DropDownList ID="status" runat="server" CssClass="form-control">
+                            <asp:ListItem>---Select---</asp:ListItem>
+                            <asp:ListItem>Rent</asp:ListItem>
+                            <asp:ListItem>Free</asp:ListItem>
+                            <asp:ListItem>Sold</asp:ListItem>
+                              </asp:DropDownList>
                     </div>
                     <div class="col-md-5"></div>
                     <div class="col-md-2 mt-1">

@@ -25,9 +25,7 @@ namespace estateConsultant.API
         [WebMethod]
         public DataTable newlistingsearch(string sn, string sitename)
         {
-            {
-                return SqlHelper.ExecuteTextDataTable(CommandType.Text, "select * from newlisting where sn like'" + sn + "' and sitename like'" + sitename + "'");
-            }
+            return SqlHelper.ExecuteTextDataTable(CommandType.Text, "select * from newlisting where sn like'" + sn + "' and sitename like'" + sitename + "'");
         }
         [WebMethod]
         public void newlistingsave(string sitename,string blockno,string plotno,string plotfacing,string length,string width,string sqft,string yard,string facingsideroad,string othersideroad,string park,string connectivity,string ratepersqft,string total,string remark,string status)
