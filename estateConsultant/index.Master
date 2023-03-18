@@ -20,22 +20,20 @@
          <div class="row p-1 m-0 bg-danger text-white">
             <div class="container">
                 <div class="row">
-                   <div class="col-md-9 col-10"></div>
-                     <div class="col-md-1 col-9 ">
-                       
-                     </div>
-                    <div class="col-md-1 col-1"></div>
+                   <div class="col-md-9 col-9"></div>
+                     
                      
 
-                    <div class="col-md-1 col-1">
+                    <div class="col-md-1 col-1 p-0">
                           <a href="default.aspx"><i class="fa fa-home fa-2x text-white text-decoration-none"></i></a>
                               </div>
+                        <div class="col-md-1 col-1 p-0"><a href="login.aspx"><i class="fa fa-sign-out  fa-2x text-white text-decoration-none"></i></a></div>
             </div></div>
 
         </div>
 
          <!--navbar starts-->
-        <div class="row m-0 bg-info p-0 navbarheader">
+        <div class="row m-0 bg-info p-0 navbarheader text-white">
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-md-3">

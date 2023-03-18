@@ -62,10 +62,10 @@
                     <div class="col-md-3">
                         Status<asp:DropDownList ID="status" runat="server" CssClass="form-control"></asp:DropDownList>
                     </div>
-                    <div class="col-md-3"></div>
+                    <div class="col-md-5"></div>
                     <div class="col-md-2 mt-1">
                         <br />
-                        <asp:Button ID="save" runat="server" Text="Save" OnClick="save_Click" CssClass="btn w-100 p-1 rounded-2 bg-warning fa-bold" />
+                        <asp:Button ID="save" runat="server" Text="Save" OnClick="save_Click" CssClass="btn w-100 p-1 rounded-2 bg-warning text-white" />
                     </div>
                 </div>
             </div>

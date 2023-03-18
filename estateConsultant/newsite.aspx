@@ -17,7 +17,7 @@
                     <div class="col-md-3">
                         <asp:TextBox ID="sitename" runat="server" CssClass="form-control"></asp:TextBox></div>
                     <div class="col-md-1 col-4">
-                        <asp:Button ID="submit" Text="Submit" runat="server" CssClass="btn w-100 p-1 rounded-2 bg-warning fa-bold" OnClick="submit_Click" />
+                        <asp:Button ID="submit" Text="Submit" runat="server"  OnClick="submit_Click" CssClass="btn w-100 p-1 rounded-2 bg-warning text-white"/>
                     </div>
                 </div>
             </div>

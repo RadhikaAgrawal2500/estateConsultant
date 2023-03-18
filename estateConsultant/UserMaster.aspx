@@ -38,7 +38,7 @@
                         <br />
                         
                         <div class="col-md-1 col-4"><br />
-                            <asp:Button ID="submit" Text="Submit" runat="server" CssClass="btn w-100 p-1 rounded-2 bg-body-secondary text-white" OnClick="submit_Click" />
+                            <asp:Button ID="submit" Text="Submit" runat="server"  OnClick="submit_Click" CssClass="btn w-100 p-1 rounded-2 bg-warning text-white" />
                             <br />
                             <br />
                         </div>
