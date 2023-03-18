@@ -40,6 +40,7 @@ namespace estateConsultant
                 {
                     dt = newsitedata.newsitesearch(e.CommandArgument.ToString(), "%");
                     sitename.Text = dt.Rows[0]["sitename"].ToString();
+
                 }
                 else
                 {

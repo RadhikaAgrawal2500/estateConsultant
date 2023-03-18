@@ -1212,6 +1212,7 @@ progress {
   .col-md-3 {
     flex: 0 0 auto;
     width: 25%;
+    font-size:1rem !important;
     
   }
   .col-md-4 {
@@ -2098,12 +2099,12 @@ progress {
 .form-control {
     display: block;
     width: 100%;
-    padding: 0.375rem 0.75rem;
+    padding: 0.15rem 0.2rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: var(--bs-body-color);
-    background-color: #e6ffff !important;
+    background-color: white !important;
     background-clip: padding-box;
     border: var(--bs-border-width) solid var(--bs-border-color);
     -webkit-appearance: none;
@@ -2111,10 +2112,13 @@ progress {
     appearance: none;
     border-radius: 0.375rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    font-size: 1rem !important;
 }
-@media (prefers-reduced-motion: reduce) {
-  .form-control {
+    .form-control:hover
+    {
+        background-color:lightyellow !important;
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .form-control {
     transition: none;
   }
 }
@@ -8570,8 +8574,8 @@ textarea.form-control-lg {
 }
 
 .bg-warning {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
+    --bs-bg-opacity: 1;
+    background-color: #990000 !important;
 }
 
 .bg-danger {

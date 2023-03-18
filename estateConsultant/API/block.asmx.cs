@@ -27,9 +27,9 @@ namespace estateConsultant.API
             }
         }
         [WebMethod]
-        public void blocksubmit(string sitename,string area)
+        public void blocksubmit(string sitename,string blockno)
         {
-            SqlHelper.ExecuteNonQuery(CommandType.Text, "insert into block(sitename,area) values('" + sitename + "','" + area + "')");
+            SqlHelper.ExecuteNonQuery(CommandType.Text, "insert into block(sitename,blockno) values('" + sitename + "','" + blockno+ "')");
         }
         [WebMethod]
         public void blockdelete(string sn)

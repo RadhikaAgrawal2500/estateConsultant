@@ -1,4 +1,16 @@
-﻿.size
+﻿@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+body {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight:600 !important;
+}
+.nav-link{
+    font-size:1.5rem !important;
+}
+.pagehead
+{
+    font-size:1.5rem !important;
+}
+.size
 {
     font-size:14px !important;
 }

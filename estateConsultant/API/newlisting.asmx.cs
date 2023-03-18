@@ -30,9 +30,9 @@ namespace estateConsultant.API
             }
         }
         [WebMethod]
-        public void newlistingsave(string sitename,string plotno,string plotfacing,string length,string width,string sqft,string unit,string facingsideroad,string othersideroad,string park,string connectivity,string ratepersqft,string total,string remark,string status)
+        public void newlistingsave(string sitename,string blockno,string plotno,string plotfacing,string length,string width,string sqft,string yard,string facingsideroad,string othersideroad,string park,string connectivity,string ratepersqft,string total,string remark,string status)
         {
-            SqlHelper.ExecuteNonQuery(CommandType.Text, "insert into newlisting(sitename,plotno,plotfacing,length,width,sqft,unit,facingsideroad,othersideroad,park,connectivity,ratepersqft,total,remark,status) values('" + sitename + "','" + plotno + "','" + plotfacing + "','" + length +"','" + width + "','" + sqft + "','" + unit + "','" + facingsideroad + "','" + othersideroad + "','" + park + "','" + connectivity + "','" + ratepersqft + "','" + total + "','" + remark + "','" + status + "')");
+            SqlHelper.ExecuteNonQuery(CommandType.Text, "insert into newlisting(sitename, blockno,plotno,plotfacing,length,width,sqft,yard,facingsideroad,othersideroad,park,connectivity,ratepersqft,total,remark,status) values('" + sitename + "','" + blockno + "','" + plotno + "','" + plotfacing + "','" + length +"','" + width + "','" + sqft + "','" + yard + "','" + facingsideroad + "','" + othersideroad + "','" + park + "','" + connectivity + "','" + ratepersqft + "','" + total + "','" + remark + "','" + status + "')");
         }
         [WebMethod]
         public void newlistingdelete(string sn)

@@ -24,6 +24,15 @@ namespace estateConsultant
         protected global::System.Web.UI.WebControls.DropDownList sitename;
 
         /// <summary>
+        /// blockno control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList blockno;
+
+        /// <summary>
         /// plotno control.
         /// </summary>
         /// <remarks>
@@ -69,13 +78,13 @@ namespace estateConsultant
         protected global::System.Web.UI.WebControls.TextBox sqft;
 
         /// <summary>
-        /// unit control.
+        /// yard control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox unit;
+        protected global::System.Web.UI.WebControls.TextBox yard;
 
         /// <summary>
         /// facingsideroad control.

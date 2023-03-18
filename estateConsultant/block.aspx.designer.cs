@@ -24,13 +24,13 @@ namespace estateConsultant
         protected global::System.Web.UI.WebControls.DropDownList sitename;
 
         /// <summary>
-        /// area control.
+        /// blockno control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox area;
+        protected global::System.Web.UI.WebControls.TextBox blockno;
 
         /// <summary>
         /// submit control.

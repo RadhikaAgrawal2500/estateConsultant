@@ -50,19 +50,19 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                                           <li class="nav-item ">
-                                            <a class="nav-link active  p-3" href="newsite.aspx"><b>Newsite</b>
+                                            <a class="nav-link active  p-3" href="newsite.aspx"><b>Site Master</b>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link active p-3" href="block.aspx"><b>Block</b>
+                                            <a class="nav-link p-3 active" href="block.aspx"><b>Block Master</b>
                                             </a>
                                         </li>
                                          <li class="nav-item">
-                                            <a class="nav-link active p-3" href="newlisting.aspx"><b>Newlisting</b>
+                                            <a class="nav-link p-3 active" href="newlisting.aspx"><b>New Listing</b>
                                             </a>
                                         </li>
                                          <li class="nav-item">
-                                            <a class="nav-link active p-3" href="usersignup.aspx"><b>UserSigning</b>
+                                            <a class="nav-link p-3 active" href="UserMaster.aspx"><b>User Master</b>
                                             </a>
                                         </li>
                                     </ul>

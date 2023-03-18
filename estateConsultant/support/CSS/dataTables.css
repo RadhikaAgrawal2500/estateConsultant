@@ -12,14 +12,14 @@ table.dataTable {
     table.dataTable thead th, table.dataTable tfoot th {
         font-weight: bold;
         font-weight: 600;
-        background-color: #dbe9ff;
+        background-color:black;
         vertical-align:middle;
       
     }
     table.dataTable thead th, table.dataTable thead td {
-        padding: 2px 10px;
-        background-color: #00bfff;
-        vertical-align:middle !important;
+        padding: 5px 10px;
+        background-color: #4d0000;
+        vertical-align: middle !important;
         border: 1px solid lightgrey;
     }
 
@@ -30,7 +30,7 @@ table.dataTable {
     table.dataTable tfoot th, table.dataTable tfoot td {
         padding: 2px 2px 1px 5px;
         border-top: 1px solid #111;
-        font-size:0.8rem;
+        font-size:0.9rem;
         font-weight:400;
         
     }

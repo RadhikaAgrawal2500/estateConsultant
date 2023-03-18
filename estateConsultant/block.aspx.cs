@@ -38,6 +38,7 @@ namespace estateConsultant
                 {
                     dt = blockdata.blocksearch(e.CommandArgument.ToString(), "%");
                     sitename.Text = dt.Rows[0]["sitename"].ToString();
+                    blockno.Text = dt.Rows[0]["blockno"].ToString();
                 }
                 else
                 {
@@ -65,7 +66,7 @@ namespace estateConsultant
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            blockdata.blocksubmit(sitename.SelectedValue,area.Text);            
+            blockdata.blocksubmit(sitename.SelectedValue,blockno.Text);            
             ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "swal('', 'Data Save Sucessfully!!!', 'success').then((value) => { window.location = 'block.aspx'})", true);
         }
     }
