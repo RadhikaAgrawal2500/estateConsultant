@@ -6,7 +6,7 @@
 <head runat="server">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>estate</title>
     <link href="support/CSS/bootstrap.css" rel="stylesheet" />
     <link href="support/CSS/font-awesome.css" rel="stylesheet" />
     <link href="support/CSS/sweetalert.min.css" rel="stylesheet" />
